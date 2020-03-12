@@ -1,0 +1,27 @@
+.black-button{
+    width: 150px;
+    height: 45px;
+    border-radius: 10%;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border-style: solid 2px;
+    box-shadow: 
+       inset 0 -3em 3em rgba(0,0,0,0.1), 
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+.white-button{
+    width: 150px;
+    height: 45px;
+    border-radius: 10%;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    border-style: solid 2px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

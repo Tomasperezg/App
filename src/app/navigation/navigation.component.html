@@ -1,0 +1,14 @@
+<div class="Navigation-Component">
+        <div class="Navigation-Trigger">
+                <button (click)="show = !show"><img src="assets/Mobile-Images/Menu_Icon_MOB.png" alt="Menu Mobile Icon"></button>
+            </div>
+        <ul class="Navigation-Content" @NavigationAnimation  *ngIf="show">
+            <li>Home</li>
+            <li>About</li>
+            <li>Portfolio</li>
+            <li><button (click)="show = !show">X</button></li>
+        </ul>   
+</div>
+
+
+
