@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SeparatorSComponent } from './separator-s/separator-s.component';
 import { ButtonComponent } from './button/button.component';
 import { FooterComponent } from './footer/footer.component';
+import { SubscriberFormComponent } from './subscriber-form/subscriber-form.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { FooterComponent } from './footer/footer.component';
     NavigationComponent,
     SeparatorSComponent,
     ButtonComponent,
-    FooterComponent
+    FooterComponent,
+    SubscriberFormComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
