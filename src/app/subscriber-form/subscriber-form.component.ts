@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core'; 
-import { Subscriber } from '../Subscriber';
 
 @Component({
   selector: 'app-subscriber-form',
@@ -9,12 +8,22 @@ import { Subscriber } from '../Subscriber';
 export class SubscriberFormComponent implements OnInit {
 
   buttonId = "Submit";
-  currentlySearching = ["Yes", "Not at the moment"];
-
   submited = false;
-
   onSubmit() {
     this.submited = true;
+  }
+
+  name: string;
+  email: string;
+  phonenumber: number;
+  subject: string;
+  message: string;
+
+  // testing info
+  // Will delete once funtionality is implemented and complete emaik request
+  processForm(){
+    const allInfo= "name: "+this.name+" email:"+this.email+" Phone number: "+this.phonenumber+" Subject: "+this.subject+" Message: "+this.message;
+    alert(allInfo)
   }
 
   constructor() { }

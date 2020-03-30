@@ -3,24 +3,40 @@
     <img src="/assets/Mobile-Images/logo.webp" alt="BlackBird Homes Logo">
 </div>
 <app-separator-s></app-separator-s>
+
 <div class="form-container">
-    <form>
+    <form (ngSubmit)="processForm()">
+
         <div class="form-input">
-            <label for="name">Full Name:</label>
-            <input type="text" class="form-control" id="name" placeholder="Name" required>
+            <input type="text" class="form-control" id="name" placeholder="Name" required 
+            [(ngModel)]="name" name="name" #nameInput="ngModel">
+            <div class="form-error" *ngIf="nameInput.invalid && nameInput.touched">
+                Name is required*
+            </div>
         </div>
         <div class="form-input">
-            <label for="email">Email:</label>
-            <input type="text" class="form-control" id="email" placeholder="Email" required>
+            <input type="text" class="form-control" id="email" placeholder="Email" required
+            [(ngModel)]="email" name="email" #emailInput="ngModel">
+            <div class="form-error"   *ngIf="emailInput.invalid && emailInput.touched">
+                Email is required*
+            </div>
         </div>
         <div class="form-input">
-            <label for="phonneNumber">Phone Number:</label>
-            <input type="text" class="form-control" id="number" placeholder="Phone Number" required>
+            <input type="number" class="form-control" id="number" placeholder="Phone Number" required
+            [(ngModel)]="phonneNumber" name="phonneNumber" #numberInput="ngModel">
+            <div class="form-error" *ngIf="numberInput.invalid && numberInput.touched">
+                Phone number is required*
+            </div>
         </div>
         <div class="form-input">
-            <label for="message">Message</label>
-            <br/>
-            <textarea placeholder="Message"></textarea>
+                <input type="text" class="form-control" id="subject" placeholder="Subject"
+                [(ngModel)]="subject" name="subject">
+            </div>
+        <div class="form-input">
+            <textarea placeholder="Message" required [(ngModel)]="message" name="message" #messageInput="ngModel"></textarea>
+            <div class="form-error" *ngIf="messageInput.invalid && messageInput.touched">
+                Message is required*
+            </div>
         </div>
         <div class="form-button">
             <app-button [buttonItem]="buttonId"></app-button>
