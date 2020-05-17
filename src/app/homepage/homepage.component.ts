@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomepageComponent implements OnInit {
 
   buttonId = "See More";
+  shtButton = "shortButton";
   
   
   constructor() { }

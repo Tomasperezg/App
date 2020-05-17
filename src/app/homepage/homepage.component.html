@@ -9,20 +9,16 @@
     <p class="Logo-TXT">Blackbird Homes is a small, home renovation company.</p>
     <!-- Creating a one way binding from parent to child component. -->
     <!-- By binding Link and text content, will be able to reporpuse this component without affect exting ones. -->
-    <app-button [buttonItem]="buttonId"></app-button>
+    <app-button [buttonItem]="buttonId" [buttonClass]="shtButton"></app-button>
 </div>
+
 
 <app-separator-s></app-separator-s>
 
-<div class="Home-Content">
-    <div class="Projects-Section">
-        <div class="Projects-TXT">
-            <p>See Projects</p>
-        </div>
-    </div>
-    <div class="Contact-Section">
-        <div class="Contact-TXT">
-            <p>Cantact Us</p>
-        </div>
-    </div>
-</div>
+<app-left-banner></app-left-banner>
+
+<app-separator-s></app-separator-s>
+
+<app-right-banner></app-right-banner>
+
+<app-separator-s></app-separator-s>

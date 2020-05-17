@@ -5,6 +5,8 @@ import {
   style,
   animate,
   transition,
+  query,
+  stagger,
   // ...
 } from '@angular/animations';
 
@@ -15,32 +17,43 @@ import {
   styleUrls: ['./navigation.component.scss'],
   animations: [
     trigger('NavigationAnimation',[
-      transition(':enter', [
-        animate('900ms ease-out', style({
-          opacity: '1',
-          transform: 'translateY(0px)',
-          zIndex: '-1',
-          height: '100%',
-        }))
+      transition(':enter, * => 0, * => -1', []),
+      transition(':increment', [
+        query(':enter', [
+          style({ 
+            opacity: 0, 
+            width: '0px' 
+          }),
+          stagger(200, [
+            animate('1s ease-out', style({ 
+              opacity: 1, 
+              width: '250px' 
+            })),
+          ]),
+        ], { optional: true })
       ]),
-      transition(':leave', [
-        animate('400ms ease-out', style({
-          opacity: '0',
-          transform: 'translateY(-300px)',
-          zIndex: '-1',
-          height: '0',
-        }))
+      transition(':decrement', [
+        query(':leave', [
+          stagger(200, [
+            animate('1s ease-out', style({ 
+              opacity: 0, 
+              width: '0px' 
+            })),
+          ]),
+        ])
       ]),
-    ])
+    ]),
   ]
 
 })
 export class NavigationComponent implements OnInit {
-  
+
+isShown = false; 
+toggle() {
+this.isShown = !this.isShown; 
+} 
   
   constructor() { }
-
-  show: boolean = false;
 
 
   ngOnInit() {}

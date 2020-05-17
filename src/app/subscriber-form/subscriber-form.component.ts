@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubscriberFormComponent implements OnInit {
 
+  shtButton = "shortButton";
+
   buttonId = "Submit";
   submited = false;
   onSubmit() {
@@ -15,7 +17,7 @@ export class SubscriberFormComponent implements OnInit {
 
   name: string;
   email: string;
-  phonenumber: number;
+  phonenumber: string;
   subject: string;
   message: string;
 

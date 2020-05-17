@@ -10,6 +10,8 @@ import { ButtonComponent } from './button/button.component';
 import { FooterComponent } from './footer/footer.component';
 import { SubscriberFormComponent } from './subscriber-form/subscriber-form.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { LeftBannerComponent } from './left-banner/left-banner.component';
+import { RightBannerComponent } from './right-banner/right-banner.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { HomepageComponent } from './homepage/homepage.component';
     ButtonComponent,
     FooterComponent,
     SubscriberFormComponent,
-    HomepageComponent
+    HomepageComponent,
+    LeftBannerComponent,
+    RightBannerComponent
   ],
   imports: [
     BrowserModule,
