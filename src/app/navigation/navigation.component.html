@@ -1,6 +1,6 @@
 <div class="Navigation-Component">
         <div class="Navigation-Trigger">
-               <button (click)="toggle()">><img src="assets/Mobile-Images/Menu_Icon_MOB.png" alt="Menu Mobile Icon"></button>
+               <button (click)="toggle()"><img (click)="changeMenuIcon()"src="{{imageSrc}}" alt="Menu Mobile Icon"></button>
         </div>
         <div [@NavigationAnimation] *ngIf="isShown" class="dropdown-menu">
             <ul class="Navigation-Content" >
