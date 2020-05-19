@@ -37,25 +37,29 @@ import {
 })
 export class NavigationComponent implements OnInit {
 
+//This is where the menu dropdown animations gets activateßd 
 isShown = false; 
 toggle() {
 this.isShown = !this.isShown; 
 } 
   
 
+// This control the logic of the menu image 
+menuOpen = 'assets/Mobile-Images/Menu_Icon_MOB.png';
+menuClosed = 'assets/Mobile-Images/closeMenu.png';
 
-imageButton = [
-  {
-    src: 'assets/Mobile-Images/Menu_Icon_MOB.png',
-  },
-  {
-    src: 'assets/Mobile-Images/closeMenu.png',
-  }
-];
+imageSrc = this.menuOpen;
 
-imageSrc = 'assets/Mobile-Images/Menu_Icon_MOB.png'
 changeMenuIcon(){
-  this.imageSrc = 'assets/Mobile-Images/closeMenu.png';
+  if (this.imageSrc == this.menuOpen){
+    this.imageSrc = this.menuClosed;
+    console.log('menu Open');
+    return this.imageSrc;
+  } 
+  else if(this.imageSrc == this.menuClosed){
+    this.imageSrc = this.menuOpen;
+    console.log('menu closed');
+  }
 };
 
   constructor() { }
