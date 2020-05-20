@@ -1,5 +1,5 @@
 <div class="footer-component">
-    <h2 class="footer-title">Stay up to date</h2>
+    <h2 class="footer-title">Find what's new</h2>
     <form>
         <input type="text" id="Email" name="Email" placeholder="Email">
     </form>
@@ -9,6 +9,11 @@
 
     </div>
     <app-separator-s></app-separator-s>
+    <h2 class="footer-title">Follow us</h2>
+    <div class="footer-social" *ngFor="let social of SocialLogo">
+        <img src={{social.value}}>
+    </div>
+    
 </div>
 
 

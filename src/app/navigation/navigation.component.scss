@@ -7,9 +7,10 @@ body{
     position: relative;
 }
 .Navigation-Trigger button{
-    background-color: rgb(51, 49, 59);
+    background-color: rgb(227, 196, 168);
     border-style: none;
     z-index: 4;
+    padding-bottom: 3px;
     
 }
 
@@ -40,5 +41,9 @@ body{
     padding-top: 15px;
     z-index: initial;
     padding-right: 20%;
+    color: rgb(227, 196, 168);
+}
+a{
+    color: rgb(227, 196, 168);  
 }
 

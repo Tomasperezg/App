@@ -20,13 +20,13 @@ import {
           opacity: 0,
           transform: 'translateY(-200px)', 
         }),
-        animate('1s', style({ 
+        animate('0.5s', style({ 
           opacity: 1,
           transform: 'translateY(1px)',
         })),
       ]),
       transition(':leave', [
-        animate('1s', style({ 
+        animate('0.5s', style({ 
           opacity: 0,
           transform: 'translateY(-100px)', 
         }))
@@ -45,7 +45,7 @@ this.isShown = !this.isShown;
   
 
 // This control the logic of the menu image 
-menuOpen = 'assets/Mobile-Images/Menu_Icon_MOB.png';
+menuOpen = 'assets/Mobile-Images/MobilMenuOpen.png';
 menuClosed = 'assets/Mobile-Images/closeMenu.png';
 
 imageSrc = this.menuOpen;
