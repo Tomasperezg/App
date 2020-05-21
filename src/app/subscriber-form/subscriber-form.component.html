@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="form-input">
-            <input type="number" class="form-control" id="number" placeholder="Phone Number" required
+            <input type="number" class="form-control" placeholder="Phone Number" required
             [(ngModel)]="phonneNumber" name="phonneNumber" #numberInput="ngModel">
             <div class="form-error" *ngIf="numberInput.invalid && numberInput.touched">
                 Phone number is required*

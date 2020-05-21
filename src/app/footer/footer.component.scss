@@ -23,3 +23,13 @@ input[type=text] {
     background-color: rgb(51, 49, 59);
     color: rgb(227, 196, 168);
 }
+.footer-social-wrap{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.footer-social img{
+    width: 60px;
+}

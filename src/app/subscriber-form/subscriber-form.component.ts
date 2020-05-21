@@ -8,22 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class SubscriberFormComponent implements OnInit {
 
   shtButton = "shortButton";
-
-  buttonId = "Submit";
+  buttonId = "Send";
   submited = false;
-  onSubmit() {
-    this.submited = true;
-  }
+
 
   name: string;
   email: string;
   phonenumber: string;
   subject: string;
   message: string;
-
   // testing info
   // Will delete once funtionality is implemented and complete emaik request
+ 
   processForm(){
+    this.submited = true;
+    console.log("fomr Submited");
     const allInfo= "name: "+this.name+" email:"+this.email+" Phone number: "+this.phonenumber+" Subject: "+this.subject+" Message: "+this.message;
     alert(allInfo)
   }

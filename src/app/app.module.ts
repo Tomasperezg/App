@@ -12,6 +12,7 @@ import { SubscriberFormComponent } from './subscriber-form/subscriber-form.compo
 import { HomepageComponent } from './homepage/homepage.component';
 import { LeftBannerComponent } from './left-banner/left-banner.component';
 import { RightBannerComponent } from './right-banner/right-banner.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { RightBannerComponent } from './right-banner/right-banner.component';
     SubscriberFormComponent,
     HomepageComponent,
     LeftBannerComponent,
-    RightBannerComponent
+    RightBannerComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

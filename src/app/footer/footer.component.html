@@ -10,10 +10,11 @@
     </div>
     <app-separator-s></app-separator-s>
     <h2 class="footer-title">Follow us</h2>
-    <div class="footer-social" *ngFor="let social of SocialLogo">
-        <img src={{social.value}}>
+    <div class="footer-social-wrap"> 
+        <div class="footer-social" *ngFor="let social of SocialLogo">
+            <a href="{{social.direct}}"><img src={{social.value}} alt="{{social.alt}}"></a>
+        </div>
     </div>
-    
 </div>
 
 
