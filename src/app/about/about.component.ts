@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  aboutbuttonContent = "Contact us";
+  btnclass = "largeButton";
+
   constructor() { }
 
   ngOnInit() {

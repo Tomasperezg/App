@@ -54,7 +54,6 @@ changeMenuIcon(){
   if (this.imageSrc == this.menuOpen){
     this.imageSrc = this.menuClosed;
     console.log('menu Open');
-    return this.imageSrc;
   } 
   else if(this.imageSrc == this.menuClosed){
     this.imageSrc = this.menuOpen;
