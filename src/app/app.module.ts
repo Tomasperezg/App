@@ -13,6 +13,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { LeftBannerComponent } from './left-banner/left-banner.component';
 import { RightBannerComponent } from './right-banner/right-banner.component';
 import { AboutComponent } from './about/about.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { AboutComponent } from './about/about.component';
     HomepageComponent,
     LeftBannerComponent,
     RightBannerComponent,
-    AboutComponent
+    AboutComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,24 @@
+[
+    {
+       "HomeName":"Indian Trail",
+       "HomeLocation":"2145 Indiqn Trail, East Grand Rapids",
+       "HomeDate":"August 2016",
+       "HomeDescription":"In the main living area, the ceilings were vaulted and walls removed to create a large living area separated only by a double fireplace. Lighting and plumbing fixtures will bring back memories for most baby boomers. A master suite was created, and a powder room was added to the main living area.",
+       "HomeImages":{
+          "Image1":"/assets/Portfolio-Images/Home1-Main-After.webp",
+          "Image2":"/assets/Portfolio-Images/Home1-Main-Before.webp",
+          "Image3":"/assets/Portfolio-Images/Home1-LivingRoom-Before.webp",
+          "Image4":"/assets/Portfolio-Images/Home1-LivingRoom-After.webp",
+          "Image5":"/assets/Portfolio-Images/Home1-Kitchen-Before.webp",
+          "Image6":"/assets/Portfolio-Images/Home1-Kitchen-After.webp",
+          "Image7":"/assets/Portfolio-Images/Home1-Kitchen2-After.webp",
+          "Image8":"/assets/Portfolio-Images/Home1-Fireplace-Before.webp",
+          "Image9":"/assets/Portfolio-Images/Home1-Fireplace-After.webp",
+          "Image10":"/assets/Portfolio-Images/Home1-Entrance-Before.webp",
+          "Image11":"/assets/Portfolio-Images/Home1-Entrance-After.webp",
+          "Image12":"/assets/Portfolio-Images/Home1-Bathroom-Before.webp",
+          "Image13":"/assets/Portfolio-Images/Home1-Bathroom-After.webp",
+          "Image14":"/assets/Portfolio-Images/Home1-Bathroom2-After.webp"
+       }
+    }
+ ]

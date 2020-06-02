@@ -19,6 +19,7 @@ import {
         style({ 
           opacity: 0,
           transform: 'translateY(-200px)', 
+          
         }),
         animate('0.5s', style({ 
           opacity: 1,

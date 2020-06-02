@@ -9,6 +9,7 @@ export class RightBannerComponent implements OnInit {
 
   leftButtonContent = "Conatact Us";
   btnclass = "largeButton";
+  rightBannerUrl = "/contact-us"; 
 
   constructor() { }
 

@@ -9,6 +9,7 @@ export class AboutComponent implements OnInit {
 
   aboutbuttonContent = "Contact us";
   btnclass = "largeButton";
+  aboutButtonUrl = "/contact-us";
 
   constructor() { }
 
