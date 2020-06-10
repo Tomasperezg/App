@@ -1,3 +1,7 @@
+.left-banner-content{
+    display: flex;
+    justify-content: center;
+}
 .left-banner-img{
     background-image: url("/assets/Mobile-Images/Projects.jpg");
     height: 350px;
@@ -7,6 +11,5 @@
     background-position: center;
     filter: opacity(0.8);
     z-index: -1;
-    position: relative;
-    z-index: -4;
+
 }

@@ -5,13 +5,16 @@ body{
 }
 .Home-Banner{
     background-image: url("/assets/Mobile-Images/MainHomeIMG.jpg");
-    height: 350px;
+    height: 170px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: grayscale(10%);
+    filter: grayscale(30%);
     z-index: -4;
+    -webkit-box-shadow: 0px 14px 5px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 14px 5px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 14px 5px -4px rgba(0,0,0,0.75);
 }
 .Home-Banner-TXT p{
     padding: 0;
@@ -29,9 +32,12 @@ body{
 .Logo-Content{
     text-align: center;
 }
-.Logo-Content img{
-    width: 190px;
-    height: 140px;
+.Logo{
+    text-align: center;
+}
+.Logo img{
+    width: 250px;
+    height: 200px;
 }
 .Logo-TXT{
     padding-left: 10px;

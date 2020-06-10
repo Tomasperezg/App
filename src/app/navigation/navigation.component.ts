@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
+
 import {
   trigger,
   state,
@@ -22,7 +23,7 @@ import {
           
         }),
         animate('0.5s', style({ 
-          opacity: 1,
+          opacity: 0.8,
           transform: 'translateY(1px)',
         })),
       ]),
@@ -43,6 +44,7 @@ isShown = false;
 toggle() {
 this.isShown = !this.isShown; 
 } 
+
   
 
 // This control the logic of the menu image 
