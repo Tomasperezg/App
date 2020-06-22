@@ -30,3 +30,9 @@ a{
     text-decoration: none;
     color: rgb(227, 196, 168);
 }
+@media only screen and (min-width: 812px) and (orientation: landscape) { 
+    .largeButton{
+        width: 55%; 
+    }
+
+}

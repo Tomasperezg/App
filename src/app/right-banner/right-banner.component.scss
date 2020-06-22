@@ -1,3 +1,7 @@
+.right-banner-component{
+    display: flex;
+    justify-content: center;
+}
 .Contact-Section{
     background-image: url("/assets/Mobile-Images/Contact-Us.jpg");
     height: 350px;
@@ -9,5 +13,11 @@
     z-index: -1;
     position: relative;
     z-index: -4;
+}
+@media only screen and (min-width: 812px) and (orientation: landscape) { 
+    .Contact-Section{ 
+        height: 350px;
+        width: 55%;
+    }
 }
 

@@ -13,3 +13,9 @@
     z-index: -1;
 
 }
+@media only screen and (min-width: 812px) and (orientation: landscape) { 
+    .left-banner-img{
+        height: 350px;
+        width: 55%;
+    }
+}

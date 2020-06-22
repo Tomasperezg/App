@@ -33,3 +33,9 @@ input[type=text] {
 .footer-social img{
     width: 60px;
 }
+@media only screen and (min-width: 812px) and (orientation: landscape) { 
+    input[type=text] {
+        width: 55%;
+    }
+
+}

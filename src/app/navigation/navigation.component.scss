@@ -48,4 +48,10 @@ body.Navigation-Content{
 a{
     color: rgb(222, 199, 155);  
 }
+@media only screen and (min-width: 812px) and (orientation: landscape) { 
+    /* Your Styles... */ 
+    .Navigation-Content {
+        padding-top: 50px;
+    }
+}
 

@@ -28,11 +28,14 @@ body{
     width: 50%;
     padding-bottom: 5px;
 }
+ul.owner-quality{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
 .owner-quality li{
     font-size: 18px;
     display: inline;;
-    text-align: center;
-    padding-left: 8%;
 }
 .owner-content{
     background-color: rgb(246, 245, 245);
@@ -42,4 +45,13 @@ body{
     padding: 0px 10px 0px 10px;
     color: rgb(51, 49, 59);
     font-size: 18px;
+}
+@media only screen and (min-width: 812px) and (orientation: landscape) { 
+    .about-owner-img img{
+        width: 300px;
+        height: 80%;
+    }
+    .owner-quality{
+        padding-left: 27%;
+    }
 }
