@@ -1,14 +1,13 @@
-body html{
-   width: 100%;
+body, html{
    height: 100%;
-   padding: 0;
+   width:100%;
 }
-body.Navigation-Content{
-    overflow: hidden;
+body{
+    overflow:hidden;
 }
+
 .Navigation-Component{
     z-index: 1;
-    position: relative;
 }
 .Navigation-Trigger button{
     border-style: none;
@@ -26,23 +25,25 @@ body.Navigation-Content{
 .Navigation-Content {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 25px;
-    text-align: center;
-    padding-top: 200px;
     margin: 0;
     background-color:black;
-    z-index: initial;
     width: 100%;
-    height: 812px;
     z-index: 4;
     position: absolute;
     opacity: 0.8;  
+    min-height: 100%;
+    height:auto !important; /* modern Browser */
+    height:100%; /* IE */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
 }
 .Navigation-Content li{
     list-style: none;
     padding-bottom: 15px;
-    padding-top: 15px;
     z-index: initial;
-    padding-right: 20%;
     color: rgb(222, 199, 155);
 }
 a{
@@ -50,8 +51,5 @@ a{
 }
 @media only screen and (min-width: 812px) and (orientation: landscape) { 
     /* Your Styles... */ 
-    .Navigation-Content {
-        padding-top: 50px;
-    }
 }
 

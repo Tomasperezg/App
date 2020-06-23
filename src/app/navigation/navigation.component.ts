@@ -19,8 +19,7 @@ import {
       transition(':enter', [
         style({ 
           opacity: 0,
-          transform: 'translateY(-200px)', 
-          
+          transform: 'translateY(-200px)',
         }),
         animate('0.5s', style({ 
           opacity: 0.8,
