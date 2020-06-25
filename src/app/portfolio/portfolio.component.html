@@ -3,3 +3,10 @@
     <img src="/assets/Mobile-Images/logo.jpg" alt="BlackBird Homes Logo">
 </div>
 <app-separator-s></app-separator-s>
+<div class="project-list" *ngFor="let item of projectArray">
+    <div class="project-container">
+        <a class="project-item" href="{{item.url}}"><img src="{{item.value}}" alt="{{item.alt}}" /></a>
+        <div class="centered">{{item.name}}</div>
+    </div>    
+</div>
+<app-separator-s></app-separator-s>

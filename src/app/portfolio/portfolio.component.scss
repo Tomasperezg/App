@@ -1,7 +1,9 @@
-body{
+bod, html{
     margin: 0;
     padding: 0;
     font-family: 'Libre Caslon Text', serif;
+    width: 100%;
+    height: 100%;
 }
 .form-logo{
     display: flex;
@@ -9,4 +11,52 @@ body{
 }
 .form-logo img{
     width: 200px;
+}
+.project-list{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+.project-list img{
+    width: 100%;
+    height: 340px;
+    filter: grayscale(20%);
+}
+
+.project-item{
+    display: flex;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+}
+@media only screen and (min-width: 665px) and (orientation: landscape) { 
+    .project-list img{
+        width: 99%;
+        height: 340px;
+    }
+    .project-list{
+        display: inline flow-root list-item;
+        width: 48.5%;
+        padding-left: 1%;
+    }
+
+}
+@media only screen and (min-width: 665px) and (orientation: portrait) { 
+    .project-list img{
+        width: 99%;
+        height: 340px;
+    }
+    .project-list{
+        display: inline flow-root list-item;
+        width: 48.5%;
+        padding-left: 1%;
+    }
+
 }

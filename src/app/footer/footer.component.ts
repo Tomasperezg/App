@@ -27,4 +27,4 @@ export class Social{
   value: string;
   alt: string;
   direct: string;
-}
+};
