@@ -35,8 +35,6 @@ export class PortfolioComponent implements OnInit {
     this.router.navigate([`/portfolio/`, item.id]);
     console.log(this.projectArray);
   }
-
-
 }
 
 export class projects{
