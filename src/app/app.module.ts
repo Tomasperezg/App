@@ -14,6 +14,7 @@ import { LeftBannerComponent } from './left-banner/left-banner.component';
 import { RightBannerComponent } from './right-banner/right-banner.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     LeftBannerComponent,
     RightBannerComponent,
     AboutComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,

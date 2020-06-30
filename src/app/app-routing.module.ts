@@ -6,6 +6,7 @@ import { SubscriberFormComponent } from './subscriber-form/subscriber-form.compo
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component'
 import { PortfolioComponent } from './portfolio/portfolio.component' 
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'home', component: HomepageComponent},
   {path: 'about', component: AboutComponent},
   {path: 'portfolio', component: PortfolioComponent},
+  {path: 'portfolio/:id', component: ProjectDetailComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'}
   
 ];
@@ -26,3 +28,7 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const routingComponent = [
+  PortfolioComponent,
+  ProjectDetailComponent
+]
