@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./left-banner.component.scss']
 })
 export class LeftBannerComponent implements OnInit {
-
+   // This is where button class/link/url can be edited
   leftButtonContent = "See Portfolio";
   btnclass = "largeButton";
-
+  url = '/portfolio';
   constructor() { }
 
   ngOnInit() {

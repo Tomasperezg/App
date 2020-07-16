@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  // This is where button class/link/url can be edited
   aboutbuttonContent = "Contact us";
   btnclass = "largeButton";
   aboutButtonUrl = "/contact-us";
