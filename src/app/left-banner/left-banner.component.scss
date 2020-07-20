@@ -29,6 +29,11 @@
     text-align: left;
 }
 @media only screen and (min-width: 665px) and (orientation: landscape) { 
+    .left-banner-div{
+        width: 75%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
     .left-banner-img{
         height: 350px;
         width: 55%;
