@@ -10,8 +10,16 @@
     justify-content: center;
     width: 100%;
 }
+form{
+    background-color: rgb(246, 245, 245);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .form-input{
     padding-bottom: 10px;
+    
 }
 .form-input input{
     padding: 5px;
@@ -19,6 +27,7 @@
     border-bottom: 1px black solid;
     width: 270px;
     font-size: 20px;
+    background-color: rgb(246, 245, 245);
 }
 .form-button{
     text-align: center;
@@ -28,8 +37,29 @@
     height: 270px;
     border: 1px black solid;
     font-size: 18px;
+    background-color: rgb(246, 245, 245);
 }
 .form-error{
     color: red;
     font-size: 11px;
+}
+@media only screen and (min-width: 665px) and (orientation: landscape) { 
+    .form-input input{
+        width: 350px;
+        background-color: rgb(246, 245, 245);
+    }
+    .form-input textarea{
+        width: 350px;
+        background-color: rgb(246, 245, 245);
+    }
+    .form-error{
+        font-size: 14px;
+    }
+    form{
+        background-color: rgb(246, 245, 245);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
 }
