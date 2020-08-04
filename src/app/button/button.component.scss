@@ -23,7 +23,7 @@
 
 }
 .Button-Content{
-    text-align: center;
+    // text-align: center;
 }
 
 a{
@@ -32,7 +32,29 @@ a{
 }
 @media only screen and (min-width: 665px) and (orientation: landscape) { 
     .largeButton{
-        width: 55%; 
+        width: 80%; 
     }
 
 }
+// This is tablet/ipad resolution
+// Portrait
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    .largeButton{
+        width: 45%; 
+    }
+    
+  }
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    //CSS
+    
+  }
+  @media (min-width: 1025px) {
+      .largeButton{
+          width: 40%;
+      }
+      .largeButton:hover{
+          opacity: 0.8;
+      }
+  }

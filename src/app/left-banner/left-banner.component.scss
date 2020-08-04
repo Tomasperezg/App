@@ -1,46 +1,141 @@
-.left-banner-div{
-    text-align: center;
-    width: 100%;
+@media (min-width: 320px) and (max-width: 664px){
+.left-banner-cont{
     background-color: rgb(205, 255, 255);
-}
-.left-banner-content{
-    display: flex;
-    justify-content: center;
-    z-index: -1;
     padding-top: 15px;
+    padding-bottom: 15px;
 }
-.left-banner-img{
-    background-image: url("/assets/Mobile-Images/Projects.jpg");
+.left-banner-pic img{
     height: 270px;
     width: 80%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: opacity(0.8);
-    z-index: 1;
 }
-.left-banner-btn-container{
-    padding-bottom: 15px;
+.left-banner-pic{
+    text-align: center;
 }
-.left-banner-text{
+.left-banner-tx p{
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 16px;
-    text-align: left;
 }
-@media only screen and (min-width: 665px) and (orientation: landscape) { 
-    .left-banner-div{
+.left-banner-btn-container{
+    text-align: center;
+}
+}
+@media only screen and (min-width: 665px) and (max-width: 812px) and (orientation: landscape) {
+    .left-banner-cont{
+        background-color: rgb(205, 255, 255);
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .left-banner-pic img{
+        height: 270px;
+        width: 80%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .left-banner-pic{
+        text-align: center;
+    }
+    .left-banner-tx p{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .left-banner-btn-container{
+        text-align: center;
+    }
+    .left-banner{
         width: 75%;
         margin-left: 12.5%;
         margin-right: 12.5%;
     }
-    .left-banner-img{
-        height: 350px;
-        width: 55%;
+}
+// This is tablet/ipad resolution
+// Portrait
+@media (min-width: 768px) and (max-width: 1024px) {
+    .left-banner{
+        padding-left: 15px;
+        padding-right: 15px;
     }
-    .left-banner-text{
-        margin-left: 22.5%;
-        margin-right: 22.5%;
-        font-size: 18px;
+    .left-banner-cont{
+        display: flex;
+        background-color: rgb(205, 255, 255);
+        padding: 15px;
+    }
+    .left-banner-pic img{
+        height: 270px;
+        width: 260px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .left-banner-pic{
+        padding-right: 15px;
+    }
+    .left-banner-tx{
+        padding-top: 10%;
+        font-size: 16px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .left-banner{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .left-banner-cont{
+        display: flex;
+        background-color: rgb(205, 255, 255);
+        padding: 15px;
+    }
+    .left-banner-pic img{
+        height: 270px;
+        width: 260px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .left-banner-pic{
+        padding-right: 15px;
+    }
+    .left-banner-tx{
+        padding-top: 10%;
+        font-size: 16px;
+    }
+  }  
+@media (min-width: 1025px){
+    .left-banner{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .left-banner-cont{
+        display: flex;
+        background-color: rgb(205, 255, 255);
+        padding: 15px;
+        left: 70%;
+    }
+    .left-banner-pic img{
+        height: 270px;
+        width: 260px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .left-banner-pic{
+        padding-right: 15px;
+        padding-left: 11%;
+    }
+    .left-banner-tx{
+        padding-top: 6%;
+        font-size: 16px;
+        text-align: left;
+    }
+    .left-banner-tx p{
+        margin-left: 10%;
+        margin-right: 20%;
+    }
+    .left-banner-btn-container{
+        margin-left: 10%;
     }
 }

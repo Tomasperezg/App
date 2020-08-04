@@ -49,7 +49,7 @@ bod, html{
     }
 
 }
-@media only screen and (min-width: 665px) and (orientation: portrait) { 
+@media only screen and (min-width: 665px) and (max-width: 812px) and (orientation: portrait) { 
     .project-list img{
         width: 99%;
         height: 340px;
@@ -61,3 +61,15 @@ bod, html{
     }
 
 }
+// This is tablet/ipad resolution
+// Portrait
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    //CSS
+    
+  }
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    //CSS
+    
+  }  

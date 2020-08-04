@@ -2,7 +2,17 @@
 <div class="Navigation-Component">
         <div class="Navigation-Trigger">
                <button (click)="toggle()"><img (click)="changeMenuIcon()"src="{{imageSrc}}" alt="Menu Mobile Icon"></button>
+                 <!-- Tablet/Desktop Navigation Content  -->
+        <div class="td-navigation-container">
+                <div class="td-navigation-content">
+                    <p><a href="/home" routerLinkActive="active">Home</a></p>
+                    <p><a href="/about" routerLinkActive="active">About</a></p>
+                    <p><a href="/portfolio" routerLinkActive="active">Portfolio</a></p>
+                    <p><a href="/contact-us" routerLinkActive="active">Contact Us</a></p>
+                </div>
+            </div>
         </div>
+        <!-- Mobil Navigation Content -->
         <div [@NavigationAnimation] *ngIf="isShown" class="dropdown-menu">
             <ul class="Navigation-Content" >
                 <li><a href="/home" routerLinkActive="active">Home</a></li>
@@ -10,7 +20,7 @@
                 <li><a href="/portfolio" routerLinkActive="active">Portfolio</a></li>
                 <li><a href="/contact-us" routerLinkActive="active">Contact Us</a></li>
             </ul> 
-        </div>  
+        </div> 
 </div>
 
 
