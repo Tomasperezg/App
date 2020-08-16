@@ -5,55 +5,54 @@ body, html{
 body{
     overflow:hidden;
 }
-a{
-    color: rgb(222, 199, 155);  
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+.Navigation-Component{
+    z-index: 1;
 }
-    .Navigation-Component{
-        z-index: 1;
-    }
-    .Navigation-Trigger button{
-        border-style: none;
-        z-index: 4;
-        background-color: rgb(24, 24, 30);
-        padding: 3px;
-    }
+.Navigation-Trigger button{
+    border-style: none;
+    z-index: 4;
+    background-color: rgb(24, 24, 30); 
+}
 
-    .Navigation-Trigger img{
+.Navigation-Trigger img{
+    padding-top: 5px;
     width: 45px;
-    }
-    .td-navigation-container{
-        display: none;
-    }
-    .Navigation-Trigger{
-        background-color: rgb(24, 24, 30);
-    }
-    .Navigation-Content {
-        font-family: 'PT Sans Narrow', sans-serif;
-        font-size: 25px;
-        margin: 0;
-        background-color:black;
-        width: 100%;
-        z-index: 4;
-        position: absolute;
-        opacity: 0.8;  
-        min-height: 100%;
-        height:auto !important; /* modern Browser */
-        height:100%; /* IE */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-left: 0;
-    }
-    .Navigation-Content li{
-        list-style: none;
-        padding-bottom: 15px;
-        z-index: initial;
-        color: rgb(222, 199, 155);
-    }
-
-
-@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) { 
+}
+.td-navigation-container{
+    display: none;
+}
+.Navigation-Trigger{
+    background-color: rgb(24, 24, 30);
+}
+.Navigation-Content {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 45px;
+    margin: 0;
+    background-color:black;
+    width: 100%;
+    z-index: 4;
+    position: absolute;
+    opacity: 0.9;  
+    min-height: 100%;
+    height:auto !important; /* modern Browser */
+    height:100%; /* IE */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+.Navigation-Content li{
+    list-style: none;
+    padding-bottom: 15px;
+    z-index: initial;
+}
+.Navigation-Content a{
+    color: white;
+}
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) and (orientation: landscape) { 
     .Navigation-Component{
         z-index: 1;
     }
@@ -75,7 +74,7 @@ a{
     }
     .Navigation-Content {
         font-family: 'PT Sans Narrow', sans-serif;
-        font-size: 25px;
+        font-size: 35px;
         margin: 0;
         background-color:black;
         width: 100%;
@@ -95,13 +94,10 @@ a{
         list-style: none;
         padding-bottom: 15px;
         z-index: initial;
-        color: rgb(222, 199, 155);
     }
-   
 }
-// This is tablet/ipad resolution
-// Portrait
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+// For Tablet and larger resolutions
+@media (min-width: 768px){
     .Navigation-Trigger img{
         display: none;
     }
@@ -109,113 +105,33 @@ a{
         display: none;
     } 
     .Navigation-Trigger{
-        height: 45px;
+        display: none;
+    }
+    .Navigation-Component{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        opacity: 0.9;
     } 
     .td-navigation-container{
-        display: flex;
+        background-color: white;
     }
     .td-navigation-content{
         display: flex;
         justify-content: center;
-        flex-direction: row;
     }
     .td-navigation-content p{
-        color: rgb(222, 199, 155);
-        font-size: 20px;
         font-family: 'PT Sans Narrow', sans-serif;
-        padding-right: 25px;
-        padding-left: 10px;
-        padding-top: 15px;
-        margin-top: 0;
+        color: black;
     }
-  }
-@media (min-width: 768px) and (max-width: 1024px) {
-    .Navigation-Trigger img{
-        display: none;
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        display: block;
+        width: 111px;
     }
-    .Navigation-Trigger button{
-        display: none;
-    } 
-    .Navigation-Trigger{
-        height: 45px;
-    } 
-    .td-navigation-container{
-        display: flex;
-    }
-    .td-navigation-content{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-    .td-navigation-content p{
-        color: rgb(222, 199, 155);
-        font-size: 25px;
-        font-family: 'PT Sans Narrow', sans-serif;
-        padding-right: 25px;
-        padding-left: 15px;
-        padding-top: 10px;
-        margin-top: 0;
-    }
-    
   } 
-// This is desktop/Laptop resoluiton  
-@media (min-width: 1025px) and (max-width: 1280px) {
-    .Navigation-Trigger img{
-        display: none;
-    }
-    .Navigation-Trigger button{
-        display: none;
-    } 
-    .Navigation-Trigger{
-        height: 45px;
-    } 
-    .td-navigation-container{
-        display: flex;
-    }
-    .td-navigation-content{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-    .td-navigation-content p{
-        color: rgb(222, 199, 155);
-        font-size: 25px;
-        font-family: 'PT Sans Narrow', sans-serif;
-        padding-right: 25px;
-        padding-left: 15px;
-        padding-top: 10px;
-        margin-top: 0;
-    }
-    
-  }
-//   For larger displays
-@media (min-width: 1281px) {
-    .Navigation-Trigger img{
-        display: none;
-    }
-    .Navigation-Trigger button{
-        display: none;
-    } 
-    .Navigation-Trigger{
-        height: 55px;
-    } 
-    .td-navigation-container{
-        display: flex;
-    }
-    .td-navigation-content{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-    .td-navigation-content p{
-        color: rgb(222, 199, 155);
-        font-size: 25px;
-        font-family: 'PT Sans Narrow', sans-serif;
-        padding-right: 25px;
-        padding-left: 25px;
-        padding-top: 15px;
-        margin-top: 0;
-    }
-    
-  }
+
   

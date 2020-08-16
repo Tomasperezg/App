@@ -108,8 +108,8 @@
   }  
   @media (min-width: 1025px) {
     .right-banner{
-        margin-left: 10%;
-        margin-right: 10%;
+        display: flex;
+        justify-content: center;
     }
     .right-banner-cont{
         display: flex;
@@ -117,16 +117,17 @@
         padding: 15px;
         flex-direction: row-reverse;
         left: 50%;
+        max-width: 920px;
     }
     .right-banner-pic img{
         height: 270px;
-        width: 260px;
+        width: 290px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     .right-banner-pic{
-        padding-right: 11%;
+        padding-right: 1%;
     }
     .right-banner-tx{
         padding-top: 6%;

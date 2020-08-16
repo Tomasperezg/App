@@ -106,25 +106,26 @@
   }  
 @media (min-width: 1025px){
     .left-banner{
-        margin-left: 10%;
-        margin-right: 10%;
+        display: flex;
+        justify-content: center;
     }
     .left-banner-cont{
         display: flex;
         background-color: rgb(205, 255, 255);
         padding: 15px;
         left: 70%;
+        max-width: 920px;
     }
     .left-banner-pic img{
         height: 270px;
-        width: 260px;
+        width: 290px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     .left-banner-pic{
         padding-right: 15px;
-        padding-left: 11%;
+        padding-left: 1%;
     }
     .left-banner-tx{
         padding-top: 6%;

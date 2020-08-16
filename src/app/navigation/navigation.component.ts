@@ -19,11 +19,11 @@ import {
       transition(':enter', [
         style({ 
           opacity: 0,
-          transform: 'translateY(-200px)',
+          transform: 'translateY(-800px)',
         }),
         animate('0.5s', style({ 
           opacity: 0.8,
-          transform: 'translateY(1px)',
+          transform: 'translateY(0px)',
         })),
       ]),
       transition(':leave', [
